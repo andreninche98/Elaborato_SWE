@@ -7,7 +7,7 @@ public abstract class Account extends Subject{ //classe astratta Account -> Conc
     protected boolean isNegative;
 
     public Account(User user, int balance, boolean isNegative) { //costruttore
-        this.user = user;
+        this.user = new User(user.getName(), user.getSurname(), user.getAge());
         this.balance = balance;
         this.isNegative = isNegative;
     }
