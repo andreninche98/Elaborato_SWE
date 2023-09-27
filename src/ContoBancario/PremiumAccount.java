@@ -1,5 +1,5 @@
 package ContoBancario;
-import ContoBancario.Account;
+
 
 public class PremiumAccount extends Account{ //sottoclasse di Account in versione premium
     private int premiumCost; //costo di attivazione
@@ -16,7 +16,7 @@ public class PremiumAccount extends Account{ //sottoclasse di Account in version
     }
     @Override
     public void checkDecrement(int amount){
-        if(balance < -100){
+        if(balance < -50){
             isNegative = true;
         }
     }
